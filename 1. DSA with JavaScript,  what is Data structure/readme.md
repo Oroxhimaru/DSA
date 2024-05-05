@@ -24,8 +24,3 @@
 
 9. Traversal means following it as whole like reading the whole array, Insertion if you want to insert new valuue , then deletion delete, searching for search, sorting for arranging, merging for merge the two value.
 
-
-![dsa oper](image-4.png)
-
-
-10. 
