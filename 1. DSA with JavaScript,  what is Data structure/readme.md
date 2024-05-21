@@ -15,6 +15,8 @@
 
  ![dsa types](image-2.png)
 
+string , number , bigint , boolean , symbol , null and undefined
+
 
 6. linear mean operations can be perform in the start or end not in between
 7. non linear means can be start from anywhere like tree node or graph.
