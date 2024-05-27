@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Element in Array</title>
+    <script>
+      //Make array.
+      let data = [20, 40, 60, 5, 10, 70, 80, 99];
+      let item = 70;
+      let index = undefined;
+      for (i = 0; i <= data.length - 1; i++) {
+        console.warn(data[i]);
+        if (data[i] === item) {
+          index = i;
+          break; //when find the position loop will break
+        }
+      }
+      console.log(index);
+
+      //what if there is two 70 value
+      {
+        let data = [20, 40, 60, 5, 10, 70, 80, 99, 70];
+        let item = 70;
+        let indices = []; // Initialize an empty array to store the indices
+        for (i = 0; i <= data.length - 1; i++) {
+          // console.warn(data[i])
+          if (data[i] === item) {
+            indices.push(i); // Add the current index to the array
+          }
+        }
+        console.log(indices);
+      }
+
+      //Shortcut for Search element(Default Function)
+      {
+        let data = [20, 40, 60, 5, 10, 70, 80, 99];
+        let item = 70;
+        console.warn(data.indexOf(item));
+      }
+
+      //Search element with text input and button.
+      {
+        function searchElement() {
+          let data = [20, 40, 60, 5, 10, 70, 80, 99];
+          let item = document.getElementById("searchEl").value;
+          let index = undefined;
+          for (i = 0; i <= data.length - 1; i++) {
+            // console.warn(data[i])
+            if (data[i] === parseInt(item)) {
+              index = i;
+              break;
+            }
+          }
+          console.warn(index);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="text" placeholder="enter value" id="searchEl" />
+    <button onclick="searchElement()">Search Element</button>
+  </body>
+</html>
